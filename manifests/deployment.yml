@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: alexxiongxiongpipelinesjavascriptdocker 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: alexxiongxiongpipelinesjavascriptdocker
+  template:
+    metadata:
+      labels:
+        app: alexxiongxiongpipelinesjavascriptdocker 
+    spec:
+      containers:
+        - name: alexxiongxiongpipelinesjavascriptdocker 
+          image: alexrampuptest.azurecr.io/alexxiongxiongpipelinesjavascriptdocker
+          ports:
+          - containerPort: 8080
