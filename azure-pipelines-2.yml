@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: '10f8d536-4b2b-471b-8766-b70084941832'
   imageRepository: 'alexxiongxiongpipelinesjavascriptdocker'
   containerRegistry: 'alexrampuptest.azurecr.io'
-  dockerfilePath: '/Dockerfile'
+  dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'alexrampuptest6452dfe7-auth'
 
